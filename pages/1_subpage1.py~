@@ -1,0 +1,9 @@
+import streamlit as st
+import pandas as pd
+
+
+st.write('避難所')
+
+df = pd.read_csv('hinanjo_20211201.csv')
+st.write(df)
+st.map(df)
